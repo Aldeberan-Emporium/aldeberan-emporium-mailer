@@ -1,0 +1,68 @@
+@mixin center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+@mixin paddingHorizontal{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper{
+    @include center;
+    @include paddingHorizontal;
+
+    &>#content{
+        background: #F3F5E3;
+
+        &>div{
+            margin: 1em;
+        }
+    }
+}
+
+#title{
+    @include center;
+
+    &>img{
+        width: 10%;
+        border-radius: 50px;
+    }
+
+    &>span{
+        font-size: 40px;
+        margin-left: .5em;
+        font-weight: 400;
+        color: #C7B198;
+    }
+}
+
+#itemTable{
+    @include paddingHorizontal;
+}
+
+#graditude{
+    padding-top: 1em;
+}
+
+#footer{
+    padding-top: 3em;
+    @include center;
+    text-align: center;
+
+
+    &>span>#facebook>a{
+        font-size: 30px;
+        text-decoration: none;
+        color: #C7B198;
+    }
+
+    &>span>#copyright{
+        font-size: 10px;
+    }
+}
