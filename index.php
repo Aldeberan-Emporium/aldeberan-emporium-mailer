@@ -9,7 +9,7 @@
     $userEmail = $_GET['email'];
     $userName = $_GET['name'];
 
-    $html = file_get_contents('template.html')
+    $html = file_get_contents('template.html');
     /*
     $orderRef = $_GET['ref'];
     $orderItems = $_GET['items'];
