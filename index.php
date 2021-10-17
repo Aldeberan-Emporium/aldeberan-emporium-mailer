@@ -19,7 +19,7 @@
         //Server settings
         $mail->isSMTP();                                     
         $mail->Host       = 'smtp.gmail.com';               
-        $mail->SMTPAuth   = true;                                
+        $mail->SMTPAuth   = true;
         $mail->Username   = getenv("USERNAME");     
         $mail->Password   = getenv("PASSWORD");             
         $mail->SMTPOptions = array(
