@@ -9,7 +9,7 @@
     $userEmail = $_GET['email'];
     $userName = $_GET['name'];
 
-    $html = str_replace('%username%', $userName, file_get_contents('template.html'));
+    $html = str_replace(array('%username%', $userName), array('%orderref%', 'tempo order ref 123 hahaha'), file_get_contents('template.html'));
     /*
     $orderRef = $_GET['ref'];
     $orderItems = $_GET['items'];
