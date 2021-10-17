@@ -43,5 +43,7 @@
         $mail->Subject = 'Thank you for purchasing with Aldeberan Emporium!';
         $mail->Body    = $html;
         $mail->send();
-    } catch (Exception $e) {}     
+    } catch (Exception $e) {
+        var_dump($e);
+    }     
 ?> 
