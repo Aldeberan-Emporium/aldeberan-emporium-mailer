@@ -9,7 +9,7 @@
     $userEmail = $_GET['email'];
     $userName = $_GET['name'];
 
-    $html = file_get_contents('template.html');
+    $html = str_replace('%suername%', $userName, file_get_contents('template.html'));
     /*
     $orderRef = $_GET['ref'];
     $orderItems = $_GET['items'];
@@ -41,7 +41,7 @@
         //Content
         $mail->isHTML(true); //Set email format to HTML
         $mail->Subject = 'Thank you for purchasing with Aldeberan Emporium!';
-        $mail->Body    = $html;
+        $mail->Body = $html;
         $mail->send();
     } catch (Exception $e) {
         var_dump($e);
