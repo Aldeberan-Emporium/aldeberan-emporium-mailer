@@ -1,23 +1,17 @@
 <!DOCTYPE html>
     <body style="font-family: 'Roboto', sans-serif;">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-        <div class="row col-md-12" id="wrapper" style="padding-left: 150px; padding-right: 150px; display: flex; justify-content: center; align-items: center;">
-            <div class="col-md-12" id="content" style="background: #F3F5E3;">
-                <div class="col-md-12" id="title" style="margin: 1em; display: flex; justify-content: center; align-items: center;">
-                    <img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/>
+        <div id="wrapper" style="padding-left: 150px; padding-right: 150px; display: flex; justify-content: center; align-items: center;">
+            <div id="content" style="background: #F3F5E3;">
+                <div id="title" style="margin: 1em; display: flex; justify-content: center; align-items: center;">
+                    <img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px; display: flex; justify-content: center; align-items: center;"/>
                 </div>
-                <div class="col-md-12" style="margin: 1em;">
+                <div style="margin: 1em;">
                     <span>
                         Dear %username%,<br/>
                         Here are your order details for Order $orderRef:
                     </span>
                 </div>
-                <div class="col-md-12" id="details" style="margin: 1em;">
+                <div id="details" style="margin: 1em;">
                     <span>
                         Date: $orderDate <br/><br/> 
                         Recipient Address:<br/>
@@ -27,54 +21,54 @@
                         Item(s) Purchased:<br/>   
                     </span>
                 </div>
-                <div class="col-md-12" id="itemTable" style="margin: 1em; padding-left: 150px; padding-right: 150px;">
-                    <table class="table table-hover table-bordered">
+                <div id="itemTable" style="margin: 1em;">
+                    <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                         <thead>
                           <tr>
-                            <th scope="col">Thumbnail</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Unit Price</th>
+                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Thumbnail</th>
+                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Name</th>
+                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Quantity</th>
+                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Unit Price</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>RM ?</td>
+                            <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">1</th>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">Mark</td>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">Otto</td>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">RM ?</td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>RM ?</td>
+                            <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">2</th>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">Jacob</td>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">Thornton</td>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">RM ?</td>
                           </tr>
                           <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>RM ?</td>
+                            <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">3</th>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">Larry</td>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">the Bird</td>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">RM ?</td>
                           </tr>
                           <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <th>Total Price</th>
-                            <td>RM ?</td>
+                            <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;"></th>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;"></td>
+                            <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">Total Price</th>
+                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">RM ?</td>
                           </tr>
                         </tbody>
                       </table>
                 </div>
-                <div class="col-md-12" id="graditude" style="margin: 1em;">
+                <div id="graditude" style="margin: 1em;">
                     <span>
-                        Thank you for purchasing with Aldeberan Emporium! Hope you have a nice day!<br/>
+                        Thank you for purchasing with Aldeberan Emporium! Hope you have a nice day!<br/><br/>
                         Best regards,<br/>
                         Aldeberan Emporium Team. <br/>
                     </span>
                 </div>
-                <div class="col-md-12" id="footer" style="margin: 1em; padding-top: 3em; text-align: center;">
+                <div id="footer" style="margin: 1em; padding-top: 3em; text-align: center;">
                     <span>
-                    <span id="facebook"><a href="https://www.facebook.com/Aldeberan-Emporium-107635728356122" target="_blank" style="font-size: 30px; text-decoration: none; color: #C7B198;"><i class="fab fa-facebook-square"></i></a></span><br/>
+                    <span id="facebook"><a href="https://www.facebook.com/Aldeberan-Emporium-107635728356122" target="_blank" style="font-size: 30px; text-decoration: none; color: #C7B198;"><img src="http://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" style="width:5%; color: #C7B198;"/></a></span><br/>
                     <span id="copyright" style="font-size: 10px;">©Copyright 2021 Aldeberan Emporium. All Right Reserved.</span>
                     </span>
                 </div>
