@@ -56,7 +56,7 @@
                                     Item(s) Purchased:<br/>   
                                 </span>
                             </div>
-                            <div style="margin: 1em; overflow-x:auto;">
+                            <div style="margin: 1em; overflow-x:auto; text-align: center;">
                                 <table>                                    
                                     <tr>
                                         <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Product</th>
