@@ -9,9 +9,7 @@
     $userEmail = $_GET['email'];
     $userName = $_GET['name'];
 
-    ob_start();
-    include "./template_inline.php";
-    $html = ob_get_clean();
+    $html = file_get_contents('template-inline.php');
             
     try {
         //Server settings
