@@ -67,12 +67,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png" style="width: 20%;"/></td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Quantity</td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM Price</td>
-                                    </tr>
+                                        <tr>
+                                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png"/></td>
+                                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
+                                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Quantity</td>
+                                            <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM Price</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                         </div>
