@@ -56,7 +56,7 @@
                                     Item(s) Purchased:<br/>   
                                 </span>
                             </div>
-                            <div>
+                            <div style="margin: 1em; overflow-x:auto;">
                                 <table>                                    
                                     <tr>
                                         <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Product</th>
@@ -65,10 +65,10 @@
                                         <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
                                     </tr>
                                     <tr>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png"/></td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Quantity</td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM Price</td>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";><img src="https://i.imgur.com/YnDcc8J.png"/></td>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>Name</td>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>Quantity</td>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>RM Price</td>
                                     </tr>                                    
                                 </table>
                             </div>
