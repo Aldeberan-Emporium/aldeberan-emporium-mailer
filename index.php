@@ -6,15 +6,11 @@
     require "vendor/autoload.php";
 
     $mail = new PHPMailer(true);   
-    $userEmail = $_GET['email'];
-    $userName = $_GET['name'];
 
-    $html = str_replace('%username%', $userName, file_get_contents('template-inline.html'));
-    /*
-    $orderRef = $_GET['ref'];
-    $orderItems = $_GET['items'];
-    $orderAddress = $_GET['address'];
-    */
+    ob_start();
+    include "template_inline.php";
+    $html = ob_get_clean();
+            
     try {
         //Server settings
         $mail->isSMTP();                                     
