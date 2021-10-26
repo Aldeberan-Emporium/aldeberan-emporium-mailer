@@ -58,18 +58,12 @@
                       </div>
                       <div id="itemTable" style="margin: 1em;">
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
-                            <colgroup>
-                                <col span="1" style="width: 15%;"></col>
-                                <col span="1" style="width: 30%;"></col>
-                                <col span="1" style="width: 25%;"></col>
-                                <col span="1" style="width: 30%;"></col>
-                            </colgroup>
                             <thead>
                                 <tr>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Name</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Quantity</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Unit Price</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
                                 </tr>
                               </thead>
                               <tbody>';
@@ -83,9 +77,9 @@
                 $prodImg = $row1['product_img'];
                 $html .='<tr>
                   <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;"><img src="'.html_entity_decode($prodImg).'" style="width: 20%;"/></th>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">'.$prodName.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 25%;">'.$prodQuantity.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">RM '.$prodPrice.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 25%;">'.$prodName.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;">'.$prodQuantity.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 25%;">RM '.$prodPrice.'</td>
                 </tr>';
             }
         }
