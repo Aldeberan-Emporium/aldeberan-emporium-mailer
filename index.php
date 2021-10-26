@@ -38,7 +38,7 @@
               <div id="wrapper" style="display: flex; justify-content: center; align-items: center;">
                   <div id="content" style="background: #F3F5E3;">
                       <div id="title" style="margin: 1em; display: flex; justify-content: center; align-content: center; text-align: center;">
-                          <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/></span>
+                          <span style="text-align:center;"><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/></span>
                       </div>
                       <div style="margin: 1em;">
                           <span>
