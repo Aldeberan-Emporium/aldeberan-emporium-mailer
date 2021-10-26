@@ -91,10 +91,8 @@
                 </tr>';
             }
         }*/
-    $html .='   </tbody>
-            </table>
-                      </div>
-                      <div id="graditude" style="margin: 1em;">
+    $html .='</tbody></table></div>';
+    $html .='<div id="graditude" style="margin: 1em;">
                           <span>
                               Thank you for purchasing with Aldeberan Emporium! Hope you have a nice day!<br/><br/>
                               Best regards,<br/>
