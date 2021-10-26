@@ -60,13 +60,13 @@
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                             <thead>
                                 <tr>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
                                 </tr>
-                              </thead>
-                              <tbody>';
+                            </thead>
+                            <tbody>';
         $getOrderItems = "SELECT * FROM order_item WHERE order_id = '$orderID'";
         $result1 = mysqli_query($conn, $getOrderItems);
         if (mysqli_num_rows($result1) > 0) {
@@ -103,7 +103,10 @@
               </div>
           </body>
       </html>';
+
+    echo $html;
             
+    /*
     try {
         //Server settings
         $mail->isSMTP();                                     
@@ -135,4 +138,5 @@
     } catch (Exception $e) {
         var_dump($e);
     }     
+    */
 ?> 
