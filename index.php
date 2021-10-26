@@ -67,6 +67,14 @@
                                 </tr>
                             </thead>
                             <tbody>';
+    $html .='<tr>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png" style="width: 20%;"/></th>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Quantity</td>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM Price</td>
+            </tr>';
+
+        /*
         $getOrderItems = "SELECT * FROM order_item WHERE order_id = '$orderID'";
         $result1 = mysqli_query($conn, $getOrderItems);
         if (mysqli_num_rows($result1) > 0) {
@@ -82,7 +90,7 @@
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM '.$prodPrice.'</td>
                 </tr>';
             }
-        }
+        }*/
     $html .='   </tbody>
             </table>
                       </div>
