@@ -67,7 +67,7 @@
                                 </tr>
                               </thead>
                               <tbody>';
-        $getOrderItems = "SELECT * FROM order_items WHERE order_id = '$orderID'";
+        $getOrderItems = "SELECT * FROM order_item WHERE order_id = '$orderID'";
         $result1 = mysqli_query($conn, $getOrderItems);
         if (mysqli_num_rows($result1) > 0) {
             while($row1 = mysqli_fetch_assoc($result1)){
