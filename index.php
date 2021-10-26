@@ -60,10 +60,10 @@
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                             <thead>
                                 <tr>
-                                    <th scope="col" background: #C7B198; color: #F3F5E3;"> </th>
-                                    <th scope="col" background: #C7B198; color: #F3F5E3;">Name</th>
-                                    <th scope="col" background: #C7B198; color: #F3F5E3;">Quantity</th>
-                                    <th scope="col" background: #C7B198; color: #F3F5E3;">Unit Price</th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
                                 </tr>
                             </thead>
                             <tbody>';
