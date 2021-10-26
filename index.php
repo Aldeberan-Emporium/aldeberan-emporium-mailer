@@ -76,10 +76,10 @@
                 $prodPrice = $row1['product_price'];
                 $prodImg = $row1['product_img'];
                 $html .='<tr>
-                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;"><img src="'.html_entity_decode($prodImg).'" style="width: 20%;"/></th>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 25%;">'.$prodName.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;">'.$prodQuantity.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 25%;">RM '.$prodPrice.'</td>
+                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="'.html_entity_decode($prodImg).'" style="width: 20%;"/></th>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>'.$prodName.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>'.$prodQuantity.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM '.$prodPrice.'</td>
                 </tr>';
             }
         }
