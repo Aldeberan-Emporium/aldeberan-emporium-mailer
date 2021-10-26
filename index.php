@@ -57,7 +57,7 @@
                           </span>
                       </div>
                       <div id="itemTable" style="margin: 1em; overflow-x:auto;">
-                          <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
+                          <table style="text-align: center;" cellspacing="0" cellpadding="0">
                             <thead>
                                 <tr>
                                     <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Product</th>
