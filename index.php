@@ -63,19 +63,7 @@
                                         <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
                                         <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
                                         <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";><img src="https://i.imgur.com/YnDcc8J.png" style="width: 20%;"/></td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>Name</td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>Quantity</td>
-                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>RM Price</td>
-                                    </tr>                                    
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </body>
-            </html>';    
+                                    </tr>';    
     $getOrderItems = "SELECT * FROM order_item WHERE order_id = '$orderID'";
     $result1 = mysqli_query($conn, $getOrderItems);
     if (mysqli_num_rows($result1) > 0) {
@@ -85,15 +73,20 @@
             $prodPrice = $row1['product_price'];
             $prodImg = $row1['product_img'];
             $html .='<tr>
-                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="'.html_entity_decode($prodImg).'" style="width: 20%;"/></th>
-                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>'.$prodName.'</td>
-                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>'.$prodQuantity.'</td>
-                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM '.$prodPrice.'</td>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";><img src="'.html_entity_decode($prodImg).'" style="width: 20%;"/></td>                
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>'.$prodName.'</td>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>'.$prodQuantity.'</td>
+                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A";>'.$prodPrice.'</td>
             </tr>';
         }
     }
-    /*$html .='</tbody></table></div>';
-    $html .='<div id="graditude" style="margin: 1em;">
+    $html .='</table>
+            </div>
+            </div>
+            </div>
+            </body>
+            </html>';
+    /*$html .='<div id="graditude" style="margin: 1em;">
                           <span>
                               Thank you for purchasing with Aldeberan Emporium! Hope you have a nice day!<br/><br/>
                               Best regards,<br/>
