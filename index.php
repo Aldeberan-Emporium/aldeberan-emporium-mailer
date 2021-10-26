@@ -37,8 +37,8 @@
           <body style="font-family: "Roboto", sans-serif;">
               <div id="wrapper" style="display: flex; justify-content: center; align-items: center;">
                   <div id="content" style="background: #F3F5E3;">
-                      <div id="title" style="margin: 1em; display: flex; justify-content: center; align-content: center; text-align: center;">
-                          <span style="text-align:center;"><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/></span>
+                      <div id="title" style="margin: 1em; text-align: center;">
+                          <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/></span>
                       </div>
                       <div style="margin: 1em;">
                           <span>
@@ -60,7 +60,7 @@
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                               <thead>
                                 <tr>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;"></th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;"> </th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Name</th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Quantity</th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Unit Price</th>
