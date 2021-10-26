@@ -34,45 +34,51 @@
     }
   
     $html .='<html>
-          <body style="font-family: "Roboto", sans-serif;">
-              <div id="wrapper" style="display: flex; justify-content: center; align-items: center;">
-                  <div id="content" style="background: #F3F5E3;">
-                      <div id="title" style="margin: 1em; text-align: center;">
-                          <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 60px;"/></span>
-                      </div>
-                      <div style="margin: 1em;">
-                          <span>
-                              Dear '.$userName.',<br/>
-                              Here are your order details for Order '.$orderRef.':
-                          </span>
-                      </div>
-                      <div id="details" style="margin: 1em;">
-                          <span>
-                              Date: '.$orderDate.' <br/><br/> 
-                              Recipient Address:<br/>
-                              '.$recipient.' '.$contact.'<br/>
-                              '.$line1.', '.$line2.'<br/>
-                              '.$code.', '.$city.', '.$state.'.<br/><br/> 
-                              Item(s) Purchased:<br/>   
-                          </span>
-                      </div>
-                      <div id="itemTable" style="margin: 1em; overflow-x:auto;">
-                          <table>
-                            <thead>
-                                <tr>
-                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Product</th>
-                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
-                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
-                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png" style="width: 20%;"/></th>
-                                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
-                                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Quantity</td>
-                                <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM Price</td>
-                            </tr>';
+                <body style="font-family: "Roboto", sans-serif;">
+                    <div id="wrapper" style="display: flex; justify-content: center; align-items: center;">
+                        <div id="content" style="background: #F3F5E3;">
+                            <div id="title" style="margin: 1em; text-align: center;">
+                                <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 60px;"/></span>
+                            </div>
+                            <div style="margin: 1em;">
+                                <span>
+                                    Dear '.$userName.',<br/>
+                                    Here are your order details for Order '.$orderRef.':
+                                </span>
+                            </div>
+                            <div id="details" style="margin: 1em;">
+                                <span>
+                                    Date: '.$orderDate.' <br/><br/> 
+                                    Recipient Address:<br/>
+                                    '.$recipient.' '.$contact.'<br/>
+                                    '.$line1.', '.$line2.'<br/>
+                                    '.$code.', '.$city.', '.$state.'.<br/><br/> 
+                                    Item(s) Purchased:<br/>   
+                                </span>
+                            </div>
+                            <div id="itemTable" style="margin: 1em; overflow-x:auto;">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Product</th>
+                                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
+                                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
+                                            <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png" style="width: 20%;"/></th>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Quantity</td>
+                                        <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM Price</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </html>';
     /*$html .='<tr>
                 <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;><img src="https://i.imgur.com/YnDcc8J.png" style="width: 20%;"/></th>
                 <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>Name</td>
@@ -97,7 +103,7 @@
                 </tr>';
             }
         }*/
-    $html .='</tbody></table></div>';
+    /*$html .='</tbody></table></div>';
     $html .='<div id="graditude" style="margin: 1em;">
                           <span>
                               Thank you for purchasing with Aldeberan Emporium! Hope you have a nice day!<br/><br/>
@@ -114,7 +120,7 @@
                   </div>
               </div>
           </body>
-      </html>';
+      </html>';*/
 
     echo $html;
             
