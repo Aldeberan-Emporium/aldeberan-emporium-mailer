@@ -9,7 +9,7 @@
     $userEmail = $_GET['email'];
     $userName = $_GET['name'];
     $orderID = $_GET['order_id'];
-    
+
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
     $server = $url["host"];
@@ -27,7 +27,7 @@
                     LEFT JOIN order_address oa
                     ON oa.order_id = o.order_id
                     WHERE order_id = '$orderID'";
-    $result = mysqli_query($conn, $query);
+    $result = mysqli_query($conn, $getOrders);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)){
             $orderRef = $row['order_reference'];
@@ -77,7 +77,7 @@
                               </thead>
                               <tbody>';
         $getOrderItems = "SELECT * FROM order_items WHERE order_id = '$orderID'";
-        $result = mysqli_query($conn, $query);
+        $result = mysqli_query($conn, $getOrderItems);
         if (mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)){
                 $prodName = $row['product_name'];
