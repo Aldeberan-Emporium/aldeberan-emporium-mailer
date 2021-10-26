@@ -35,14 +35,14 @@
   
     $html .='<html>
           <body style="font-family: "Roboto", sans-serif;">
-              <div id="wrapper" style="padding-left: 150px; padding-right: 150px; display: flex; justify-content: center; align-items: center;">
+              <div id="wrapper" style="display: flex; justify-content: center; align-items: center;">
                   <div id="content" style="background: #F3F5E3;">
                       <div id="title" style="margin: 1em; display: flex; justify-content: center; align-content: center; text-align: center;">
                           <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/></span>
                       </div>
                       <div style="margin: 1em;">
                           <span>
-                              Dear '.$username.',<br/>
+                              Dear '.$userName.',<br/>
                               Here are your order details for Order '.$orderRef.':
                           </span>
                       </div>
@@ -60,7 +60,7 @@
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                               <thead>
                                 <tr>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Thumbnail</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;"></th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Name</th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Quantity</th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Unit Price</th>
@@ -76,7 +76,7 @@
                 $prodPrice = $row1['product_price'];
                 $prodImg = $row1['product_img'];
                 $html .='<tr>
-                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;"><img src="'.$prodImg.'" style="width: 5%;"/></th>
+                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;"><img src="'.html_entities($prodImg).'" style="width: 10%;"/></th>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">'.$prodName.'</td>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">'.$prodQuantity.'</td>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">RM '.$prodPrice.'</td>
