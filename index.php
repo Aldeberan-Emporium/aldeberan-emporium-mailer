@@ -62,7 +62,7 @@
                                 <tr>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Name</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Quantity</th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Unit Price</th>
                                 </tr>
                               </thead>
@@ -76,9 +76,9 @@
                 $prodPrice = $row1['product_price'];
                 $prodImg = $row1['product_img'];
                 $html .='<tr>
-                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;"><img src="'.html_entity_decode($prodImg).'"/></th>
+                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;"><img src="'.html_entity_decode($prodImg).'" style="width: 20%;"/></th>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">'.$prodName.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;">'.$prodQuantity.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 25%;">'.$prodQuantity.'</td>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">RM '.$prodPrice.'</td>
                 </tr>';
             }
@@ -95,7 +95,7 @@
                       </div>
                       <div id="footer" style="margin: 1em; padding-top: 3em; text-align: center;">
                           <span>
-                          <span id="facebook"><a href="https://www.facebook.com/Aldeberan-Emporium-107635728356122" target="_blank" style="font-size: 20px; text-decoration: none; color: #C7B198;"><img src="http://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" style="width:5%; color: #C7B198;"/></a></span><br/>
+                          <span id="facebook"><a href="https://www.facebook.com/Aldeberan-Emporium-107635728356122" target="_blank" style="font-size: 20px; text-decoration: none; color: #C7B198;"><img src="http://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" style="width:3%; color: #C7B198;"/></a></span><br/>
                           <span id="copyright" style="font-size: 10px;">©Copyright 2021 Aldeberan Emporium. All Right Reserved.</span>
                           </span>
                       </div>
