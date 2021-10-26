@@ -17,7 +17,7 @@
     $getOrders = "SELECT * FROM orders o
                     LEFT JOIN order_address oa
                     ON oa.order_id = o.order_id
-                    WHERE order_id = '$orderID'";
+                    WHERE o.order_id = '$orderID'";
     $result = mysqli_query($conn, $getOrders);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)){
