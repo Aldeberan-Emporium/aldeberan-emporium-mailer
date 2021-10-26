@@ -81,7 +81,6 @@
         }
     }
     $html .='</table>
-            </div>
             </div>';
     $html .='<div id="graditude" style="margin: 1em;">
                           <span>
