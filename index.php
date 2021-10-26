@@ -60,9 +60,9 @@
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                               <thead>
                                 <tr>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 10%;"> </th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Name</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Quantity</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
                                   <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Unit Price</th>
                                 </tr>
                               </thead>
@@ -76,9 +76,9 @@
                 $prodPrice = $row1['product_price'];
                 $prodImg = $row1['product_img'];
                 $html .='<tr>
-                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 10%;"><img src="'.html_entity_decode($prodImg).'" style="width: 10%;"/></th>
+                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;"><img src="'.html_entity_decode($prodImg).'"/></th>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">'.$prodName.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">'.$prodQuantity.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 15%;">'.$prodQuantity.'</td>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">RM '.$prodPrice.'</td>
                 </tr>';
             }
