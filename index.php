@@ -38,7 +38,7 @@
               <div id="wrapper" style="display: flex; justify-content: center; align-items: center;">
                   <div id="content" style="background: #F3F5E3;">
                       <div id="title" style="margin: 1em; text-align: center;">
-                          <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 50px;"/></span>
+                          <span><img src="https://i.imgur.com/YnDcc8J.png" style="width: 10%; border-radius: 60px;"/></span>
                       </div>
                       <div style="margin: 1em;">
                           <span>
@@ -60,10 +60,10 @@
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                               <thead>
                                 <tr>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;"> </th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Name</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Quantity</th>
-                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3;">Unit Price</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 10%;"> </th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Name</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Quantity</th>
+                                  <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 30%;">Unit Price</th>
                                 </tr>
                               </thead>
                               <tbody>';
@@ -76,10 +76,10 @@
                 $prodPrice = $row1['product_price'];
                 $prodImg = $row1['product_img'];
                 $html .='<tr>
-                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;"><img src="'.html_entity_decode($prodImg).'" style="width: 10%;"/></th>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">'.$prodName.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">'.$prodQuantity.'</td>
-                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">RM '.$prodPrice.'</td>
+                  <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 10%;"><img src="'.html_entity_decode($prodImg).'" style="width: 10%;"/></th>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">'.$prodName.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">'.$prodQuantity.'</td>
+                  <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A; width: 30%;">RM '.$prodPrice.'</td>
                 </tr>';
             }
         }
@@ -95,7 +95,7 @@
                       </div>
                       <div id="footer" style="margin: 1em; padding-top: 3em; text-align: center;">
                           <span>
-                          <span id="facebook"><a href="https://www.facebook.com/Aldeberan-Emporium-107635728356122" target="_blank" style="font-size: 30px; text-decoration: none; color: #C7B198;"><img src="http://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" style="width:5%; color: #C7B198;"/></a></span><br/>
+                          <span id="facebook"><a href="https://www.facebook.com/Aldeberan-Emporium-107635728356122" target="_blank" style="font-size: 20px; text-decoration: none; color: #C7B198;"><img src="http://assets.stickpng.com/thumbs/584ac2d03ac3a570f94a666d.png" style="width:5%; color: #C7B198;"/></a></span><br/>
                           <span id="copyright" style="font-size: 10px;">©Copyright 2021 Aldeberan Emporium. All Right Reserved.</span>
                           </span>
                       </div>
