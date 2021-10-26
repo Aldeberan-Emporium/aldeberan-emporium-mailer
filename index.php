@@ -82,11 +82,8 @@
     }
     $html .='</table>
             </div>
-            </div>
-            </div>
-            </body>
-            </html>';
-    /*$html .='<div id="graditude" style="margin: 1em;">
+            </div>';
+    $html .='<div id="graditude" style="margin: 1em;">
                           <span>
                               Thank you for purchasing with Aldeberan Emporium! Hope you have a nice day!<br/><br/>
                               Best regards,<br/>
@@ -102,7 +99,7 @@
                   </div>
               </div>
           </body>
-      </html>';*/
+      </html>';
 
     echo $html;
             
