@@ -6,9 +6,11 @@
     require "vendor/autoload.php";
 
     $mail = new PHPMailer(true);   
+    $userEmail = $_GET['email'];
+    $userName = $_GET['name'];
 
     ob_start();
-    include "template_inline.php";
+    include "./template_inline.php";
     $html = ob_get_clean();
             
     try {
