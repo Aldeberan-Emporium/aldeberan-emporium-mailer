@@ -56,11 +56,11 @@
                               Item(s) Purchased:<br/>   
                           </span>
                       </div>
-                      <div id="itemTable" style="margin: 1em;">
+                      <div id="itemTable" style="margin: 1em; overflow-x:auto;">
                           <table style="width: 100%; text-align: center;" cellspacing="0" cellpadding="0">
                             <thead>
                                 <tr>
-                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;"> </th>
+                                    <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Product</th>
                                     <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Name</th>
                                     <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 15%;">Quantity</th>
                                     <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
