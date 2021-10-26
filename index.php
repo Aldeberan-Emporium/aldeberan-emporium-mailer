@@ -10,16 +10,7 @@
     $userName = $_GET['name'];
     $orderID = $_GET['order_id'];
 
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-    $server = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $db = substr($url["path"], 1);
-
-    //Instantiate connection
-    $conn = mysqli_connect($server, $username, $password, $db);
-    $conn->set_charset("utf8");
+    require "cleardb.php";
 
     $html = "";
 
@@ -77,13 +68,13 @@
                               </thead>
                               <tbody>';
         $getOrderItems = "SELECT * FROM order_items WHERE order_id = '$orderID'";
-        $result = mysqli_query($conn, $getOrderItems);
-        if (mysqli_num_rows($result) > 0) {
-            while($row = mysqli_fetch_assoc($result)){
-                $prodName = $row['product_name'];
-                $prodQuantity = $row['product_quantity'];
-                $prodPrice = $row['product_price'];
-                $prodImg = $row['product_img'];
+        $result1 = mysqli_query($conn, $getOrderItems);
+        if (mysqli_num_rows($result1) > 0) {
+            while($row1 = mysqli_fetch_assoc($result1)){
+                $prodName = $row1['product_name'];
+                $prodQuantity = $row1['product_quantity'];
+                $prodPrice = $row1['product_price'];
+                $prodImg = $row1['product_img'];
                 $html .='<tr>
                   <th style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;"><img src="'.$prodImg.'" style="width: 5%;"/></th>
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;">'.$prodName.'</td>
