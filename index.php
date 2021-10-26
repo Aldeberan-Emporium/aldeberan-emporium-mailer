@@ -42,7 +42,7 @@
                             </div>
                             <div style="margin: 1em;">
                                 <span>
-                                    Dear <b>'.$userName.'</b>,<br/>
+                                    Dear Mr/Mrs.<b>'.$userName.'</b>,<br/>
                                     Here are your order details for Order <b>'.$orderRef.'</b>:
                                 </span>
                             </div>
@@ -50,7 +50,7 @@
                                 <span>
                                     Date: <b>'.$orderDate.'</b><br/><br/> 
                                     Recipient Address:<br/>
-                                    <b>'.$recipient.' '.$contact.'</b><br/>
+                                    <b>'.$recipient.' 60'.$contact.'</b><br/>
                                     <b>'.$line1.', '.$line2.'</b><br/>
                                     <b>'.$code.', '.$city.', '.$state.'</b><br/><br/> 
                                     Item(s) Purchased:<br/>   
