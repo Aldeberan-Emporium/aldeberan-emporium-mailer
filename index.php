@@ -66,7 +66,7 @@
                                     <th scope="col" style="padding: 10px 0px; background: #C7B198; color: #F3F5E3; width: 25%;">Unit Price</th>
                                 </tr>
                             </thead>
-                            <tbody>';/*
+                            <tbody>';
         $getOrderItems = "SELECT * FROM order_item WHERE order_id = '$orderID'";
         $result1 = mysqli_query($conn, $getOrderItems);
         if (mysqli_num_rows($result1) > 0) {
@@ -82,7 +82,7 @@
                   <td style="padding: 10px 0px; background: #EFE4D6; color: #675B4A;>RM '.$prodPrice.'</td>
                 </tr>';
             }
-        }*/
+        }
     $html .='   </tbody>
             </table>
                       </div>
