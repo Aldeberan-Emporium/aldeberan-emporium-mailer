@@ -100,9 +100,9 @@
           </body>
       </html>';
 
-    //echo $html;
+    echo $html;
             
-    
+    /*
     try {
         //Server settings
         $mail->isSMTP();                                     
@@ -134,5 +134,5 @@
     } catch (Exception $e) {
         var_dump($e);
     }     
-    
+    */
 ?> 
