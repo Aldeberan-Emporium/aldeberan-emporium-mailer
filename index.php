@@ -50,7 +50,7 @@
                                 <span>
                                     Date: <b>'.$orderDate.'</b><br/><br/> 
                                     Recipient Name: <b>'.$recipient.'</b><br/>
-                                    Recipient Contact: 60<b>'.$contact.'</b><br/>
+                                    Recipient Contact: <b>60'.$contact.'</b><br/>
                                     Recipient Address:<br/>                                    
                                     <b>'.$line1.', '.$line2.'</b><br/>
                                     <b>'.$code.', '.$city.', '.$state.'</b><br/><br/> 
