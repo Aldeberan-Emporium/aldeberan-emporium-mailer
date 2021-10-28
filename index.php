@@ -49,8 +49,9 @@
                             <div id="details" style="margin: 1em;">
                                 <span>
                                     Date: <b>'.$orderDate.'</b><br/><br/> 
-                                    Recipient Address:<br/>
-                                    <b>'.$recipient.' 60'.$contact.'</b><br/>
+                                    Recipient Name: <b>'.$recipient.'</b><br/>
+                                    Recipient Contact: <b>'.$contact.'</b><br/>
+                                    Recipient Address:<br/>                                    
                                     <b>'.$line1.', '.$line2.'</b><br/>
                                     <b>'.$code.', '.$city.', '.$state.'</b><br/><br/> 
                                     Item(s) Purchased:<br/>   
